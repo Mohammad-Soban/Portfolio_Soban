@@ -110,7 +110,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/Contact Me"
+                to="/Contact"
                 onClick={() => updateExpanded(false)}
               >
                 <div style={{width: "100%"}}>

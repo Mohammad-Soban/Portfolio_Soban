@@ -4,8 +4,8 @@ const socialMediaLinks = {
     gmail: "soban1103@gmail.com",
     gitlab: "",
     facebook: "",
-    twitter: "",
-    instagram: "",
+    twitter: "https://x.com/MohammadSobanS3",
+    instagram: "https://www.instagram.com/soban_1103/",
   };
 
 export { socialMediaLinks };

@@ -9,6 +9,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import socialMedia from "../socialMedia/SocialMedia";
+import { socialMediaLinks } from "../../portfolio";
 
 function Home2() {
   return (
@@ -20,7 +22,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I'm a <span className="purple">passionate programmer</span> and <span className="purple">data enthusiast</span> with a love for technology and innovation.
+            I'm a <span className="purple">Passionate Programmer</span> and <span className="purple">Data Science Enthusiast</span> with a love for technology and innovation.
               <br />
               <br />I am Fluent in
               <span className="purple"> Python, JavaScript</span> and <span className="purple">Scala</span> I'm always eager to explore new languages and technologies.
@@ -43,8 +45,8 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt className="tilt_image">
+          <Col md={4} className="myAvtar" style={{display: "flex", flexDirection: "column-reverse"}}>
+            <Tilt className="tilt_image" style={{margin: "auto"}}>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
@@ -58,7 +60,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Mohammad-Soban"
+                  href={socialMediaLinks.github}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -68,7 +70,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href={socialMediaLinks.twitter}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -78,7 +80,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soban1103/"
+                  href={socialMediaLinks.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -88,7 +90,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href={socialMediaLinks.instagram}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
